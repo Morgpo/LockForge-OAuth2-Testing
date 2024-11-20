@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Accounts</title>
+</head>
+<body>
+    <h1>Manage Accounts</h1>
+    <ul>
+        {% for account in accounts %}
+            <li><a href="{{ url_for('retrieve_account', account_name=account) }}">{{ account }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Main Menu</a>
+</body>
+</html>

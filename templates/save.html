@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Account</title>
+</head>
+<body>
+    <h1>Save Account</h1>
+    <form method="POST">
+        <label>Account Name:</label>
+        <input type="text" name="account_name" required><br>
+        <label>Username:</label>
+        <input type="text" name="username"><br>
+        <label>Email:</label>
+        <input type="email" name="email"><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+        <label>Misc Notes:</label>
+        <input type="text" name="misc_notes"><br>
+        <button type="submit">Save</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Main Menu</a>
+</body>
+</html>
